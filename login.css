@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-root{
-    --button_color: rgb(0, 0, 0);
-}
 
 body{
     font-size: 1.5rem;
@@ -43,3 +40,4 @@ body{
 input::placeholder{
     font-weight: 600;
 }
+
