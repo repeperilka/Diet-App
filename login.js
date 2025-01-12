@@ -63,11 +63,17 @@ function login(event){
     checkUserErrors();
     if(login_user.value === ''){
         user_errors.push("Username is required")
+        login_user.classList.add("error_field");
+    }else if(user_errors.length == 0){
+        login_user.classList.remove("error_field");
     }
 
 
     if(login_password.value.length < 8){
         password_errors.push("Password must be longer than 8 characters");
+        login_password.classList.add("error_field");
+    }else{
+        login_password.classList.remove("error_field");
     }
     buildErrorList();
 
