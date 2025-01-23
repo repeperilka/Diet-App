@@ -90,6 +90,3 @@ function login(event){
     });
 }
 
-
-console.log(submit_button)
-

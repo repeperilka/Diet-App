@@ -1,0 +1,23 @@
+{
+  "name": "dietapp_server",
+  "version": "1.0.0",
+  "description": "Server side of Diet App",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repeperilka/Diet-App.git"
+  },
+  "author": "Repeperilka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/repeperilka/Diet-App/issues"
+  },
+  "homepage": "https://github.com/repeperilka/Diet-App#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

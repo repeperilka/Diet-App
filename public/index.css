@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Header---------------------------------------------------*/
+header{
+    z-index: 1;
+    width: 100vw;
+
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 1px 1px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_content{
+    width: min(100vw, 1100px);
+    margin: 1.5rem;
+    display: grid;
+    
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.search_bar{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+}
+
+.search_bar button{
+    width: 40px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #ff670e;
+
+    border: 1px solid black;
+    border-left: none;
+}
+
+.search_bar input{
+    width: calc(100% - 40px);
+    border-radius: 10px 0px 0px 10px;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+
+    border: 1px solid black;
+    border-right: none;
+
+}
+.search_bar button:hover{
+    background-color: #c04a06;
+}
+.header_content a{
+    text-align: end;
+}
+
+/*Recipe preview -------------------------------*/
+.recipe_grid{
+    max-width: min(100vw, 1100px);
+    margin: 2rem auto;
+    display: grid;
+    grid-auto-flow: column wrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: repeat(4, 1fr);
+    gap: 1vw;
+}
+.recipe_preview_button{
+    box-shadow: 0px 0px 2px;
+    border-radius: 5px;
+    position:relative;
+}
+.recipe_image {
+    position: relative;
+}
+.recipe_image img{
+    display: inline-block;
+    width: 100%;
+    height: 140px;
+    object-fit:cover;
+}
+.recipe_image button{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #e6712d;
+    border: none;
+    box-shadow: 0px 0px 5px;
+}
+.recipe_preview_description{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.recipe_preview_description h3{
+    color: grey;
+}
